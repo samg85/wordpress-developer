@@ -1,0 +1,73 @@
+/* Theme Name: Simon Theme Test */
+/* Author: Simon Martinez       */
+/* Author URI:                  */
+/* Version: 1.0                 */
+/* License: Free                */
+/* Text Domain: simon-test      */
+body, p {
+  color: #474747; }
+
+a {
+  text-decoration: none; }
+
+#menu-smartinez {
+  height: 3vw;
+  display: block;
+  min-width: 14vw; }
+  #menu-smartinez li {
+    float: left;
+    padding: 5%; }
+    #menu-smartinez li a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none; }
+  #menu-smartinez li.active a {
+    color: #b1b1b1; }
+
+.landing-main {
+  padding-top: 8%; }
+  .landing-main p {
+    margin-bottom: 3%; }
+
+.welcome-container .welcome-img {
+  background-image: url(./img/welcome-sign-2284312_1280.jpg);
+  background-size: cover;
+  min-height: 300px;
+  background-position-y: -3.5vw; }
+.welcome-container .landing-menu {
+  display: table;
+  float: none;
+  margin: 0 auto; }
+  .welcome-container .landing-menu ul {
+    padding: 0px; }
+    .welcome-container .landing-menu ul li {
+      float: left;
+      list-style-type: none;
+      display: inline-flex;
+      cursor: pointer; }
+      .welcome-container .landing-menu ul li:first-child a {
+        border-width: 2px 1px 2px 2px;
+        border-radius: 5% 0% 0% 5%; }
+      .welcome-container .landing-menu ul li:last-child a {
+        border-width: 2px 2px 2px 1px;
+        border-radius: 0% 5% 5% 0%; }
+      .welcome-container .landing-menu ul li:hover a {
+        color: #fff;
+        background-color: #1a1a1a;
+        transition: all 0.2s ease-in; }
+      .welcome-container .landing-menu ul li a {
+        border: solid #1a1a1a;
+        padding: 1vw 1.5vw;
+        font-weight: 700;
+        color: #1a1a1a; }
+
+@media only screen and (min-width: 1024px) {
+  .welcome-container .welcome-img {
+    min-height: 300px;
+    background-position-y: -3.5vw; } }
+@media only screen and (max-width: 767px) {
+  .welcome-container .welcome-img {
+    min-height: 170px;
+    background-position-y: -3.5vw; } }
+
+/*# sourceMappingURL=style.css.map */
