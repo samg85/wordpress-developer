@@ -15,6 +15,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+	<?php echo do_shortcode( '[simon_register_form]' ); ?>
 		<?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();

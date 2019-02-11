@@ -9,10 +9,10 @@ get_header(); ?>
 				<div class="landing-menu">
 					<ul>
 						<li>
-							<a href="<?php echo get_permalink('14'); ?>" target="_self">SingUp / Login </a>
+							<a href="<?php echo get_permalink('14'); ?>" target="_self">Register Form</a>
 						</li>
 						<li>
-							<a href="<?php echo get_permalink('66'); ?>" target="_self">CV</a>
+							<a href="<?php echo get_permalink('11'); ?>" target="_self">About Me</a>
 						</li>
 					</ul>
 				</div>
