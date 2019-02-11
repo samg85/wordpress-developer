@@ -4,6 +4,31 @@
 /* Version: 1.0                 */
 /* License: Free                */
 /* Text Domain: simon-test      */
+.cv h1 {
+  padding: 1.5% 0%; }
+.cv p {
+  font-size: 0.8em; }
+.cv .cv-basicinfo {
+  min-height: 390px; }
+  .cv .cv-basicinfo .cv-picture {
+    min-height: 114px;
+    background-size: cover;
+    border-radius: 63%; }
+  .cv .cv-basicinfo .lang {
+    text-transform: capitalize; }
+.cv .cv-studies, .cv .cv-skills, .cv .cv-exp {
+  min-height: 130px; }
+.cv .cv-studies p {
+  float: left;
+  margin-left: 3%; }
+.cv .cv-proj {
+  display: inline-block; }
+  .cv .cv-proj a {
+    color: #1a1a1a;
+    text-decoration: none; }
+  .cv .cv-proj figure.card {
+    margin-right: 1.5%; }
+
 body, p {
   color: #474747; }
 
@@ -19,8 +44,9 @@ a {
     padding: 5%; }
     #menu-smartinez li a {
       color: #fff;
-      font-weight: 700;
-      text-decoration: none; }
+      font-weight: 700; }
+      #menu-smartinez li a:hover {
+        text-decoration: none; }
   #menu-smartinez li.active a {
     color: #b1b1b1; }
 

@@ -29,18 +29,21 @@ function cv_ctp() {
         'query_var'          => true,
         'rewrite'            => array( 'slug' => 'cv' ),
         'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => false,
+        'has_archive'        => false,
+        'hierarchical'       => true,
         'menu_position'      => null,
-        'supports'           => array( 'title','thumbnail' )
+        'supports'           => array( 'title' )
     );
 
     register_post_type( 'cv', $args );
 
+    flush_rewrite_rules();
 
 }
 
 add_action( 'cmb2_admin_init', 'cmb2_cv_metaboxes' );
+
+
 
 function cmb2_cv_metaboxes() {
     
@@ -204,6 +207,12 @@ function cmb2_cv_metaboxes() {
                 'closed'            => true, // true to have the groups closed by default
                 'remove_confirm'    => esc_html__( 'Are you sure you want to remove?', 'cmb2' ), // Performs confirmation before removing group.
             ),
+        ) );
+
+        $cv_cmb->add_group_field( $projects_field_id , array(
+            'name' => 'Project Name',
+            'id'   => 'pname',
+            'type' => 'text',
         ) );
 
         $cv_cmb->add_group_field($projects_field_id, array(
