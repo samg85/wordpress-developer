@@ -12,10 +12,10 @@ on your xampp folder go to "C:\xampp\apache\conf\extra" and open your httpd-vhos
 
 once inside add the following lines to the file:
 
-<VirtualHost *:80>
-    DocumentRoot "C:/xampp/htdocs/test"
-    ServerName simon.test.com
-</VirtualHost>
+<VirtualHost *:80> <br/>
+    DocumentRoot "C:/xampp/htdocs/test" <br/>
+    ServerName simon.test.com <br/>
+</VirtualHost> <br/>
 
 save and reset your xampp.
 
