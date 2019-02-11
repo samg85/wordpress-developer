@@ -135,7 +135,7 @@ function sform_shortcode() {
 add_shortcode( 'simon_register_form', 'sform_shortcode' );
 
 
-function sendContactFormToSiteAdmin () {
+function sendRegisterFormToSiteAdmin () {
     
     if(isset($_POST['fName'])){
         
@@ -184,8 +184,8 @@ function sendContactFormToSiteAdmin () {
     }
 
   }
-  add_action("wp_ajax_user_reg", "sendContactFormToSiteAdmin");
-  add_action("wp_ajax_nopriv_user_reg", "sendContactFormToSiteAdmin");
+  add_action("wp_ajax_user_reg", "sendContactRegisterToSiteAdmin");
+  add_action("wp_ajax_nopriv_user_reg", "sendContactRegisterToSiteAdmin");
 
 
 ?>
