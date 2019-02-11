@@ -15,7 +15,7 @@ once inside add the following lines to the file:
 <VirtualHost *:80> <br/>
     DocumentRoot "C:/xampp/htdocs/test" <br/>
     ServerName simon.test.com <br/>
-</VirtualHost> <br/>
+\</VirtualHost> <br/>
 
 save and reset your xampp.
 
